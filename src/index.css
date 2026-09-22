@@ -1,0 +1,31 @@
+@import "tailwindcss";
+
+@layer components {
+  .btn-primary {
+    @apply inline-flex items-center justify-center px-8 py-4 font-semibold text-white rounded-full bg-linear-to-br from-orange-500 to-orange-600 transition-all duration-300 hover:-translate-y-0.5;
+  }
+  .btn-secondary {
+    @apply px-8 py-4 font-semibold text-white bg-transparent border border-[#333] rounded-full transition-all duration-300 hover:text-orange-500 hover:bg-orange-500/10 hover:border-orange-500;
+  }
+  .glass-card {
+    @apply rounded-3xl bg-[#161616]/80 border border-[#262626];
+  }
+  .gradient-text {
+    @apply bg-linear-to-br from-orange-500 to-amber-400 bg-clip-text text-transparent;
+  }
+  .section-label {
+    @apply inline-flex items-center gap-2 px-4 py-2 text-sm font-medium text-orange-500 bg-orange-500/10 border border-orange-500/30 rounded-full;
+  }
+  .section-title {
+    @apply text-4xl md:text-6xl leading-tight font-bold;
+  }
+  .section-subtitle {
+    @apply mt-4 text-lg leading-relaxed text-neutral-400;
+  }
+  .input-dark {
+    @apply bg-[#161616] border border-[#262626] rounded-xl text-white placeholder-neutral-500 focus:outline-none focus:border-orange-500/50 transition-colors;
+  }
+  .card {
+    @apply bg-[#161616] border border-[#161616] rounded-3xl hover:border-[#161616] transition-all duration-500;
+  }
+}
